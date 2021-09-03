@@ -14,7 +14,7 @@ let player = {
     addPoints(points){
         this.score += points;
     },
-    deductpoints(points){
+    deductPoints(points){
         this.score -= points;
     }
 }
