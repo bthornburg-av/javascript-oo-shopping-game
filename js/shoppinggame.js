@@ -1,9 +1,31 @@
 let gameComplete = false;
 // Define the three constants here
-
+const name = "unkown";
+const score = 0;
+const items = 0;
 // Define the player object here
+let player = {
+    name,
+    score,
+    items,
+    getCurrentScore(score){
+        return this.score;
+    },
+    addPoints(points){
+        this.score += points;
+    },
+    deductpoints(points){
+        this.score -= points;
+    }
+}
 
 // Define the Product class - write the Constructor function for Product class here
+function Product(id, name, price, expiryDate) {
+    this.id = id,
+    this.name = name,
+    this.price = price,
+    this.expiryDate = expiryDate
+}
 
 // Complete the dateDiff function
 const dateDiff = (date1, date2) => {};
